@@ -6,18 +6,37 @@
     <title>Movie Muncher | The Good The Bad and The Movie</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/19ccb1323d.js" crossorigin="anonymous"></script>
   </head>
   <body>
+  <!--navbar-->
+  	<nav class="col-12 navbar navbar-expand-lg navbar-light fixed-top">
+		<a class="navbar-brand hvr-grow navbar-custom" href="index.html"><i class="fas fa-film"></i> Movie Muncher</a>
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+    </button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link hvr-grow-shadow" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hvr-grow-shadow" href="catergories.html">Catergories</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hvr-grow-shadow" href="contact-us.html">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!--/navbar-->
     <article class="container-fluid">
       <!--movie search bar-->
       <section class="searchbar">
         <div class="row">
           <div class="col-12 col-sm-12 col-lg-6 offset-1">
-            <h1 class="text-uppercase">Your movie search is here</h1>
+            <h1 class="text-uppercase">Your movie search is here<i class="fas fa-level-down-alt"></i></h1>
           </div>
         </div>
         <div class="row">
@@ -38,12 +57,8 @@
       <!--Collections page-->
       <section class="collections">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 my-5">
             <h2 class="text-uppercase">Most popular movies/Top rated movies</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
             <h3>search the most popular movies ......</h3>
           </div>
         </div>
@@ -53,9 +68,9 @@
       <!--Contact section-->
       <section class="contact us">
         <div class="row">
-          <div class="col-12 col-sm-12 col-lg-6 offset-3">
-            <h2 class="text-uppercase">contact us</h2>
-            <div class="row"><h3>we would love to hear from you</h3></div>
+          <div class="col-12 col-sm-12 col-lg-6 offset-3 my-5">
+            <h2 class="text-uppercase">contact us<i class="fas fa-level-down-alt d-none d-sm-inline"></i></h2>
+            <h3>we would love to hear from you</h3>
           </div>
         </div>
         <div class="row">
@@ -86,12 +101,36 @@
                 required
               ></textarea
               ><br />
-              <button type="submit" class="contactbtn">Send!</button>
+              <button type="submit" class="contactbtn" data-toggle="modal" data-target="#contactus-modal">Send!</button>
             </form>
           </div>
         </div>
       </section>
       <!--/Contact section-->
     </article>
+    <!--contact us- submit button modal-->
+    <div class="modal fade" id="contactus-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Thanks for getting in touch!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>We appreciate you contacting us. One of our agents will get back in touch with you soon!</p>
+        <p>Have a great day!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/contact us- submit button modal-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
