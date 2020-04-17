@@ -8,10 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/19ccb1323d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
   <!--navbar-->
-  	<nav class="col-12 navbar navbar-expand-lg navbar-light fixed-top">
+  	<nav class="col-12 navbar navbar-expand-lg navbar-dark fixed-top">
 		<a class="navbar-brand hvr-grow navbar-custom" href="index.html"><i class="fas fa-film"></i> Movie Muncher</a>
 		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
@@ -31,12 +33,13 @@
 		</div>
 	</nav>
 	<!--/navbar-->
-    <article class="container-fluid">
+    
       <!--movie search bar-->
-      <section class="searchbar">
+      <div class="container-fluid search-container">
+      <section class="searchbar jumbotron">
         <div class="row">
           <div class="col-12 col-sm-12 col-lg-6 offset-1">
-            <h1 class="text-uppercase">Your movie search is here<i class="fas fa-level-down-alt"></i></h1>
+            <h1 class="text-uppercase heading">Your movie search is here<i class="fas fa-level-down-alt"></i></h1>
           </div>
         </div>
         <div class="row">
@@ -51,26 +54,30 @@
           </div>
         </div>
       </section>
+      </div>
 
       <!--/movie search bar-->
-      <hr />
+      
       <!--Collections page-->
+      <div class="container catergory-container">
       <section class="collections">
         <div class="row">
           <div class="col-12 my-5">
-            <h2 class="text-uppercase">Most popular movies/Top rated movies</h2>
-            <h3>search the most popular movies ......</h3>
+            <h2 class="text-uppercase heading">Most popular movies/Top rated movies</h2>
+            <h3 class="sm-text">search the most popular movies ......</h3>
           </div>
         </div>
       </section>
+      </div>
       <!--/Collections page-->
-      <hr />
+      
       <!--Contact section-->
-      <section class="contact us">
+      <div class="container-fluid contact-container">
+      <section class="contact jumbotron">
         <div class="row">
           <div class="col-12 col-sm-12 col-lg-6 offset-3 my-5">
-            <h2 class="text-uppercase">contact us<i class="fas fa-level-down-alt d-none d-sm-inline"></i></h2>
-            <h3>we would love to hear from you</h3>
+            <h2 class="text-uppercase heading">contact us<i class="fas fa-level-down-alt d-none d-sm-inline"></i></h2>
+            <h3 class="sm-text">we would love to hear from you</h3>
           </div>
         </div>
         <div class="row">
@@ -106,8 +113,9 @@
           </div>
         </div>
       </section>
+      </div>
       <!--/Contact section-->
-    </article>
+    
     <!--contact us- submit button modal-->
     <div class="modal fade" id="contactus-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">

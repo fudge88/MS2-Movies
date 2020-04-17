@@ -1,3 +1,54 @@
-h1, h2, h3{
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+
+/*index.html*/
+.search-container {
+  height: 100vh;
+  background: url("../images/home-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*catergory.html*/
+.catergory-container {
+  height: 100vh;
+}
+
+
+/*contact.html*/
+  .contact-container {
+  height: 100vh;
+  background: url("../images/contact-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*headings*/
+.jumbotron {
+    background-color: transparent;
+}
+
+.heading{
+    color: #b1b4b3;
     text-transform: uppercase;
+}
+
+/*text*/
+.sm-text {
+ color: #b1b4b3;
 }
