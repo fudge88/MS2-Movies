@@ -2,61 +2,96 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Movie Muncher | The Good The Bad and The Movie</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
   </head>
   <body>
-    <article class="container">
+    <article class="container-fluid">
       <!--movie search bar-->
       <section class="searchbar">
-        <h1>your movie search is here</h1>
-        <input
-          type="text"
-          class="input"
-          id="inputsearch"
-          placeholder="Type to search..."
-        />
-        <button>search</button>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-lg-6 offset-1">
+            <h1 class="text-uppercase">Your movie search is here</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-lg-6 offset-1">
+            <input
+              type="text"
+              class="input"
+              id="inputsearch"
+              placeholder="Type to search..."
+            />
+            <button>Search</button>
+          </div>
+        </div>
       </section>
+
+      <!--/movie search bar-->
+      <hr />
       <!--Collections page-->
       <section class="collections">
-        <h1>Most popular movies/Top rated movies</h1>
-        <p>search the most popular movies ......</p>
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-uppercase">Most popular movies/Top rated movies</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h3>search the most popular movies ......</h3>
+          </div>
+        </div>
       </section>
+      <!--/Collections page-->
+      <hr />
       <!--Contact section-->
       <section class="contact us">
-        <h1>contact us</h1>
-        <p>we would love to hear from you</p>
-        <form>
-          <input
-            type="text"
-            name="name"
-            id="fullname"
-            class="form-control"
-            placeholder="Name"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="emailaddress"
-            class="form-control"
-            placeholder="Email"
-            required
-          />
-          <textarea
-            row="3"
-            name="enuiry"
-            id="enquiry"
-            class="form-control"
-            placeholder="Your enquiry..."
-            required
-          ></textarea
-          ><br />
-          <button type="submit" class="contactbtn">Send!</button>
-        </form>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-lg-6 offset-3">
+            <h2 class="text-uppercase">contact us</h2>
+            <div class="row"><h3>we would love to hear from you</h3></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-lg-6 offset-3">
+            <form>
+              <input
+                type="text"
+                name="name"
+                id="fullname"
+                class="form-control"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="emailaddress"
+                class="form-control"
+                placeholder="Email"
+                required
+              />
+              <textarea
+                row="3"
+                name="enuiry"
+                id="enquiry"
+                class="form-control"
+                placeholder="Your enquiry..."
+                required
+              ></textarea
+              ><br />
+              <button type="submit" class="contactbtn">Send!</button>
+            </form>
+          </div>
+        </div>
       </section>
+      <!--/Contact section-->
     </article>
   </body>
 </html>
