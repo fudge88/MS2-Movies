@@ -3,10 +3,10 @@ body {
   position: relative;
 }
 
+
 /*navbar*/
 .navbar {
     background: rgba(0,0,0,0.6);
-    padding: 1.5rem 2rem;
     text-transform: uppercase;
 }
 
@@ -18,80 +18,68 @@ body {
 }
 
  body .navbar .navbar-custom{
- color: #b1b4b3;
- font-family: oswald, sans-serif;
-     font-size: 2.5rem;
-     font-weight: 700;
+    color: #b1b4b3;
+    font-family: oswald, sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
  }
+
 
 
 /*index.html*/
 .search-container {
-  height: 100vh;
-  background: url("../images/home-bg.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    height: 100vh;
+    background: url("../images/home-bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 /*catergory.html*/
 .catergory-container {
-  height: 100vh;
-
-  position: relative;
+    height: 100vh;
+    position: relative;
 }
 
 
 /*contact.html*/
   .contact-container {
-  height: 100vh;
-  background: url("../images/contact-bg.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    height: 100vh;
+    background: url("../images/contact-bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/*dark banner*/
-/*.block-overlay {
-position: absolute;
-top: 30%;
-left: 0;
-height: 30%;
-width: 100%;
-background-color: rgba(7, 3, 3, 0.33);
-}*/
-
-
 .wrapper {
-  background: rgba(0,0,0,0.6);
-  color: black;
-  max-width: 100%;
-  padding: 10px;
-  border-radius: 15px;
-  display:flex;
-  justify-content: space-between;
-  text-align: left;
+    background: rgba(0,0,0,0.6);
+    color: black;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    display:flex;
+    justify-content: space-between;
+    text-align: left;
   }
 
   .wrapper .input {
-      width: 95%;
-      height: 30px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 15px;
-      font-weight: bold;
+    width: 95%;
+    height: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
   }
+
 
 /*headings*/
 .jumbotron {
@@ -107,12 +95,38 @@ background-color: rgba(7, 3, 3, 0.33);
     font-weight: 600;
 }
 
+
 /*text*/
 .sm-text {
- color: #b1b4b3;
+    color: #b1b4b3;
 }
 
-/*text position*/
+
+/*footer*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+    color: #b1b4b3;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.footer p{
+    padding-right: 10px;
+}
+
+.footer a{
+    padding-right: 10px;
+}
+
+.fa-facebook-f,
+.fa-twitter {
+    color: rgba(255, 255, 255, 0.6);
+}
 
 /*buttons*/
 .searchbtn {
@@ -126,28 +140,34 @@ background-color: rgba(7, 3, 3, 0.33);
 }
 
 
-
-
 /*hover properties*/
-
 .searchbtn:hover {
     background-color: #b1b4b3;
     border-color: #b1b4b3;
     color: black;
 }
 
-   a .hvr-grow:hover{
-        color: rgb(255, 255, 255);
-    }
-
+a .hvr-grow:hover{
+    color: rgb(255, 255, 255);
+}
 
 /*modal positioning*/
 .modal-dialog {
     top: 30%;
 }
 
-only show on lg screen
 
+/*media queries*/
+@media screen and (max-width:767px) {
+}
 
-only show on sm screen
-.block-overlay
+@media screen and (min-width:768px) and (max-width:991px) {
+.form-size {
+    width: 50vw;}
+}
+
+@media screen and (min-width:929px) {
+.form-size {
+    width: 50vw;}
+}
+
