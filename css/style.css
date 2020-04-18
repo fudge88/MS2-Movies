@@ -2,6 +2,28 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/*navbar*/
+.navbar {
+    background: rgba(7, 3, 3, 0.33);
+    padding: 2rem 4rem;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #b1b4b3;
+    
+    font-size: larger;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+ body .navbar .navbar-custom{
+ color: #b1b4b3;
+ font-family: oswald, sans-serif;
+     font-size: 2.5rem;
+     font-weight: 700;
+ }
+
 
 /*index.html*/
 .search-container {
@@ -38,17 +60,47 @@ body {
   justify-content: center;
 }
 
+/*dark banner*/
+.block-overlay {
+position: absolute;
+top: 30%;
+left: 0;
+height: 30%;
+width: 100%;
+background-color: rgba(7, 3, 3, 0.33);
+}
+
 /*headings*/
 .jumbotron {
     background-color: transparent;
+    width: 100%;
 }
 
 .heading{
     color: #b1b4b3;
     text-transform: uppercase;
+    font-family: oswald, sans-serif;
+    font-weight: 600;
+    padding-top: 50px;
 }
 
 /*text*/
 .sm-text {
  color: #b1b4b3;
 }
+
+/*text position*/
+
+
+
+/*hover properties*/
+   a .hvr-grow:hover{
+        color: rgb(255, 255, 255);
+    }
+
+
+only show on lg screen
+
+
+only show on sm screen
+.block-overlay
