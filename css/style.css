@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 /*navbar*/
@@ -42,6 +43,8 @@ body {
 /*catergory.html*/
 .catergory-container {
   height: 100vh;
+
+  position: relative;
 }
 
 
@@ -138,7 +141,10 @@ background-color: rgba(7, 3, 3, 0.33);
     }
 
 
-
+/*modal positioning*/
+.modal-dialog {
+    top: 30%;
+}
 
 only show on lg screen
 
