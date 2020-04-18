@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/19ccb1323d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+		type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
@@ -39,22 +41,25 @@
       <section class="searchbar jumbotron">
       <!--<div class="block-overlay">-->
         <div class="row">
-          <div class="col-12 col-sm-12 col-lg-6 offset-1">
+          <div class="col-12 col-sm-12 col-lg-6 ">
             <h2 class="text-uppercase heading">Your movie search is here<i class="fas fa-level-down-alt"></i></h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-sm-12 col-lg-6 offset-1">
+          <div class="col-12 col-sm-12 col-lg-6">
+         <div class="wrapper">
+
             <input
               type="text"
               class="input"
               id="inputsearch"
               placeholder="Type to search..."
             />
-            <button>Search</button>
+            <button type="submit" class="searchbtn hvr-grow"><i class="fas fa-angle-double-right"></i></button>
           </div>
         </div>
       <!--</div>-->
+      </div>
       </section>
       </div>
 
@@ -73,18 +78,15 @@
       </div>
       <!--/Collections page-->
       
-      <!--Contact section-->
+
+       <!--Contact section-->
       <div class="container-fluid contact-container">
-      <section class="contact">
+      <section class="contact wrapper">
         <div class="row">
           <div class="col-12">
+          <form>
             <h2 class="text-uppercase heading">contact us<i class="fas fa-level-down-alt d-none d-sm-inline"></i></h2>
             <h3 class="sm-text">we would love to hear from you</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <form>
               <input
                 type="text"
                 name="name"
@@ -102,6 +104,7 @@
                 required
               />
               <textarea
+                type="text"
                 row="3"
                 name="enuiry"
                 id="enquiry"
@@ -110,14 +113,15 @@
                 required
               ></textarea
               ><br />
-              <button type="submit" class="contactbtn" data-toggle="modal" data-target="#contactus-modal">Send!</button>
+              <button type="submit" class="searchbtn hvr-grow" data-toggle="modal" data-target="#contactus-modal">Send!</button>
             </form>
           </div>
         </div>
       </section>
       </div>
       <!--/Contact section-->
-    
+      
+      
     <!--contact us- submit button modal-->
     <div class="modal fade" id="contactus-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
