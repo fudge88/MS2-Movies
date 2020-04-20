@@ -40,3 +40,53 @@ movies.innerHTML = "";
 searchMovies(inputText.value);
 inputText.value = "";
 });
+
+
+//categories:
+
+const order = document.getElementById("page2");
+
+const orderMovies = (search) => {
+
+fetch(`https://www.omdbapi.com/?s=${search}&apikey=b619899`)
+  .then(response => response.json())
+  .then((data) => {
+      console.log(data);
+    data.Search.forEach((result) => {
+      const coll = `<div class="order-card" data-title=${result.Title} data-year=${result.Year}> 
+        <img src="${result.Poster}" alt="">
+        <h3>${result.Title}</h3>
+        <p>${result.Year}</p>
+      </div>`;
+      order.insertAdjacentHTML("beforeend", coll);
+    });
+  });
+};
+
+const orderForm = document.getElementById("orderForm");
+orderForm.addEventListener("submit", (event) => {
+event.preventDefault();
+const orderText = document.getElementById("orderText");
+order.innerHTML = "";
+
+orderMovies(orderText.value);
+orderText.value = "";
+});
+
+const nf = document.getElementById("newBtn");
+const ao = document.getElementById("alphaBtn");
+
+nf.addEventListener("click", (event)=> {
+    console.log(event.currentTarget);
+    Array.from(document.querySelectorAll(".order-card[data-year]"))
+    .sort(({dataset:{year:a}}, {dataset:{year:b}}) => b.localeCompare(a))
+    .forEach((item) =>
+    item.parentNode.appendChild(item));
+});
+ao.addEventListener("click", (event)=> {
+    console.log(event.currentTarget);
+    Array.from(document.querySelectorAll(".order-card[data-title]"))
+    .sort(({dataset:{title:a}}, {dataset:{title:b}}) => a.localeCompare(b))
+    .forEach((item) =>
+    item.parentNode.appendChild(item));
+});
