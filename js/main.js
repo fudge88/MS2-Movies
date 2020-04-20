@@ -15,7 +15,7 @@ fetch(`https://www.omdbapi.com/?s=${search}&apikey=b619899`)
         <img src="${result.Poster}" alt="">
         <h3>${result.Title}</h3>
         <p>${result.Year}</p>
-      </ul`;
+      </ul>`;
       //put the info into the <ul> on index.html
       //beforeend- if the new results are to be placed at the top we would use afterbegin
       //movie is the list item that was created at line 10

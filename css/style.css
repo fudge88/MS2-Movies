@@ -29,9 +29,17 @@ div.scroll {
     color: #b1b4b3;
     overflow-x: hidden;
     overflow-y: auto;
-    display: inline-block;
-    padding: 20px;
     height: 70vh;
+    width: 60%;
+font-family: oswald, sans-serif;
+font-weight: 600;
+text-align: center;
+float: right;
+}
+
+.scroll h3 {
+font-weight: 600;
+font-size: x-large;
 }
 
 /*scrollbar*/
