@@ -187,9 +187,31 @@ a .hvr-grow:hover{
     top: 30%;
 }
 
+/*grid*/
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.card {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: crop;
+}
+
+
 
 /*media queries*/
 @media screen and (max-width:767px) {
+    .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
