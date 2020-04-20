@@ -6,88 +6,130 @@
     <title>Movie Muncher | The Good The Bad and The Movie</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/19ccb1323d.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/19ccb1323d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      type="text/css"
+    />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
-  <!--navbar-->
-  	<nav class="col-12 navbar navbar-expand-lg navbar-dark fixed-top">
-		<a class="navbar-brand hvr-grow navbar-custom" href="index.html"><i class="fas fa-film"></i> Movie Muncher</a>
-		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-    </button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link hvr-grow-shadow" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link hvr-grow-shadow" href="#catergories">Catergories</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link hvr-grow-shadow" href="#contactus">Contact Us</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<!--/navbar-->
-    
-      <!--movie search bar-->
-      <div class="container-fluid search-container">
+    <!--navbar-->
+    <nav class="col-12 navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand hvr-grow navbar-custom" href="index.html"
+        ><i class="fas fa-film"></i> Movie Muncher</a
+      >
+      <button
+        class="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link hvr-grow-shadow" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-grow-shadow" href="#catergories"
+              >Catergories</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-grow-shadow" href="#contactus">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--/navbar-->
+
+    <!--movie search bar-->
+    <div class="container-fluid search-container">
       <section class="searchbar jumbotron">
         <div class="row">
           <div class="col-12">
-            <h2 class="text-uppercase heading">Your movie search is here<i class="fas fa-level-down-alt"></i></h2>
+            <h2 class="text-uppercase heading">
+              Your movie search is here<i class="fas fa-level-down-alt"></i>
+            </h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 ">
-         <form class="wrapper" id="searchForm">
-            <input
-              type="text"
-              class="input"
-              id="searchText"
-              placeholder="Type to search..."
-            />
-            <button type="submit" class="searchbtn hvr-grow" id="searchButton"><i class="fas fa-angle-double-right"></i></button>
-         </form>
+          <div class="col">
+            <form class="wrapper" id="searchForm">
+              <input
+                type="text"
+                class="input"
+                id="searchText"
+                placeholder="Type to search..."
+              />
+              <button
+                type="submit"
+                class="searchbtn hvr-grow"
+                id="searchButton"
+              >
+                <i class="fas fa-angle-double-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="container scroll">
+        <div class="row">
+          <ul class="col-2" id="movies"></ul>
         </div>
       </div>
-      </section>
+    </div>
+    <!--/movie search bar-->
 
-      <div class="container">
-      <div class="row">
-      <ul id="movies"></ul>
-      </div>
-      </div>
-      </div>
-      <!--/movie search bar-->
-      
-      <!--Collections page-->
-      <div class="container catergory-container" id="catergories">
+    <!--Collections page-->
+    <div class="container catergory-container" id="catergories">
       <section class="collections">
         <div class="row">
           <div class="col-12 my-5">
-            <h2 class="text-uppercase heading">Most popular movies/Top rated movies</h2>
+            <h2 class="text-uppercase heading">
+              Most popular movies/Top rated movies
+            </h2>
             <h3 class="sm-text">search the most popular movies ......</h3>
           </div>
         </div>
       </section>
-      </div>
-      <!--/Collections page-->
+    </div>
+    <!--/Collections page-->
 
-       <!--Contact section-->
-      <div class="container-fluid contact-container" id="contactus">
+    <!--Contact section-->
+    <div class="container-fluid contact-container" id="contactus">
       <section class="contact wrapper">
         <div class="row">
           <div class="col-12">
-          <form class="form-size">
-            <h2 class="text-uppercase heading">contact us<i class="fas fa-level-down-alt"></i></h2>
-            <h3 class="sm-text">we would love to hear from you</h3>
+            <form class="form-size">
+              <h2 class="text-uppercase heading">
+                contact us<i class="fas fa-level-down-alt"></i>
+              </h2>
+              <h3 class="sm-text">we would love to hear from you</h3>
               <input
                 type="text"
                 name="name"
@@ -113,46 +155,76 @@
                 required
               ></textarea
               ><br />
-              <button type="submit" class="searchbtn hvr-grow" data-toggle="modal" data-target="#contactus-modal">Send!</button>
+              <button
+                type="submit"
+                class="searchbtn hvr-grow"
+                data-toggle="modal"
+                data-target="#contactus-modal"
+              >
+                Send!
+              </button>
             </form>
           </div>
         </div>
       </section>
-      </div>
-      <!--/Contact section-->
-      
-      <!--footer section-->
-      	<div class=" footer">
-		<p>GitHub Project MS2</p>
-		<a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f hvr-grow"></i></a>
-			<a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter hvr-grow"></i></a>
-      	</div>
-      <!--/footer section-->
-      
+    </div>
+    <!--/Contact section-->
+
+    <!--footer section-->
+    <div class="footer">
+      <p>GitHub Project MS2</p>
+      <a href="http://www.facebook.com" target="_blank"
+        ><i class="fab fa-facebook-f hvr-grow"></i
+      ></a>
+      <a href="http://www.twitter.com" target="_blank"
+        ><i class="fab fa-twitter hvr-grow"></i
+      ></a>
+    </div>
+    <!--/footer section-->
+
     <!--contact us- submit button modal-->
-    <div class="modal fade" id="contactus-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Thanks for getting in touch!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>We appreciate you contacting us. One of our agents will get back in touch with you soon!</p>
-        <p>Have a great day!</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+    <div
+      class="modal fade"
+      id="contactus-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Thanks for getting in touch!
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              We appreciate you contacting us. One of our agents will get back
+              in touch with you soon!
+            </p>
+            <p>Have a great day!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!--/contact us- submit button modal-->
+    <!--/contact us- submit button modal-->
 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
