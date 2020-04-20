@@ -100,7 +100,6 @@ background: #b1b4b3;
     border-radius: 15px;
     display:flex;
     justify-content: space-between;
-    text-align: left;
   }
 
   .wrapper .input {
@@ -117,7 +116,7 @@ background: #b1b4b3;
 .jumbotron {
     background-color: transparent;
     width: 90%;
-        margin-top: 15%;
+    margin-top: 10%;
 }
 
 .heading{
@@ -194,12 +193,12 @@ a .hvr-grow:hover{
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
-.form-size {
+.form_size {
     width: 50vw;}
 }
 
 @media screen and (min-width:929px) {
-.form-size {
+.form_size {
     width: 50vw;}
 }
 

@@ -98,7 +98,7 @@
         </div>
      <!-- </section> -->
      <br>
-      <div class="container scroll">
+      <div class=" scroll">
         <div class="row">
           <ul id="movies"></ul>
         </div>
@@ -127,7 +127,7 @@
       <section class="contact wrapper">
         <div class="row">
           <div class="col-12">
-            <form class="form-size">
+            <form class="form_size" onsubmit="return sendMail(this);">
               <h2 class="text-uppercase heading">
                 contact us<i class="fas fa-level-down-alt"></i>
               </h2>
@@ -224,9 +224,11 @@
       </div>
     </div>
     <!--/contact us- submit button modal-->
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="js/sendMail.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

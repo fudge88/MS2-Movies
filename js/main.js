@@ -11,11 +11,11 @@ fetch(`https://www.omdbapi.com/?s=${search}&apikey=b619899`)
       //iterating from this point down
     data.Search.forEach((result) => {
         //creating <li> for the html to display the info requested
-      const movie = `<div> 
+      const movie = `<li class="in-line-item"> 
         <img src="${result.Poster}" alt="">
         <h3>${result.Title}</h3>
         <p>${result.Year}</p>
-      </div>`;
+      </li>`;
       //put the info into the <ul> on index.html
       //beforeend- if the new results are to be placed at the top we would use afterbegin
       //movie is the list item that was created at line 10
