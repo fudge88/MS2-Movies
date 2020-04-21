@@ -208,6 +208,13 @@ a .hvr-grow:hover{
     color: rgb(255, 255, 255);
 }
 
+button .addMore:hover {
+    border: 2px;
+    background-color: black;
+    color: #deba2b;
+    border-radius: 15px;
+}
+
 /*modal positioning*/
 .modal-dialog {
     top: 30%;
@@ -216,7 +223,7 @@ a .hvr-grow:hover{
 /*grid*/
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 16px;
     border-radius: 15px;
 }

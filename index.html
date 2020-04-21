@@ -55,11 +55,6 @@
             <a class="nav-link hvr-grow-shadow" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link hvr-grow-shadow" href="#catergories"
-              >Catergories</a
-            >
-          </li>
-          <li class="nav-item">
             <a class="nav-link hvr-grow-shadow" href="#contactus">Contact Us</a>
           </li>
         </ul>
@@ -90,9 +85,12 @@
                 type="submit"
                 class="searchbtn hvr-grow"
                 id="searchButton"
+                title="Search"
               >
                 <i class="fas fa-angle-double-right"></i>
               </button>
+              <button id="newBtn" class="sortbtn hvr-grow" title="Newest First"><i class="fas fa-sort-amount-down"></i></button>
+            <button id="alphaBtn" class="sortbtn hvr-grow" title="Alphabetical Order"><i class="fas fa-sort-alpha-down"></i></button>
             </form>
           </div>
         </div>
@@ -107,50 +105,6 @@
     </div>
     <!--/movie search bar-->
 
-    <!--Collections page-->
-    <div class="container-fluid catergory-container" id="catergories">
-      <section class="searchbar jumbotron">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="text-uppercase heading">
-              <i class="fas fa-quote-left"></i>Why not <u><strong>sort</strong></u> your search!?<i class="fas fa-quote-right"></i>
-            </h2>
-            <h3>Choose from remakes and classics, or search from A to Zeeee...</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-8 col-md-6">
-                       <form class="wrapper" id="orderForm">
-              <input
-                type="text"
-                class="input"
-                id="orderText"
-                placeholder="Type to search..."
-              />
-              <button
-                type="submit"
-                class="searchbtn hvr-grow"
-                id="orderButton"
-              >
-                <i class="fas fa-angle-double-right"></i>
-              </button>
-            
-            <button id="newBtn" class="sortbtn hvr-grow"><i class="fas fa-sort-amount-down"></i></button>
-            <button id="alphaBtn" class="sortbtn hvr-grow"><i class="fas fa-sort-alpha-down"></i></button>
-            </form>
-            <br>
-          </div>
-        </div>
-      <div class="scroll">
-        <div class="row">
-            <div id="page2" class="cards">
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!--/Collections page-->
-
     <!--Contact section-->
     <div class="container-fluid contact-container" id="contactus">
       <section class="contact wrapper">
@@ -160,7 +114,7 @@
               <h2 class="text-uppercase heading">
                 contact us<i class="fas fa-level-down-alt"></i>
               </h2>
-              <h3 class="sm-text">we would love to hear from you</h3>
+              <h4 class="sm-text">We would love to hear from you!</h4>
               <input
                 type="text"
                 name="name"
@@ -185,7 +139,7 @@
                 placeholder="Your enquiry..."
                 required
               ></textarea
-              ><br />
+              ><br>
               <button
                 type="submit"
                 class="searchbtn hvr-grow"

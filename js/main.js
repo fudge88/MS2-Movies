@@ -73,8 +73,6 @@ order.innerHTML = "";
 orderMovies(orderText.value);
 orderText.value = "";
 });
-//this adds default movies so the page doesnt look empty
-orderMovies("bad boys");
 
 //the buttons to sort the order of the films
 //newest to old
