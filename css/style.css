@@ -32,10 +32,11 @@ div.scroll {
     overflow-x: hidden;
     overflow-y: auto;
     height: 50vh;
-    width: 100%
+    width: 100%;
 font-family: oswald, sans-serif;
 font-weight: 600;
 text-align: center;
+margin-bottom: 50px
 }
 
 .scroll h3 {
@@ -74,9 +75,18 @@ background: #b1b4b3;
 
 /*catergory.html*/
 .catergory-container {
-    height: 100vh;
     position: relative;
+    height: 100vh;
+    background: url("../images/home-sm.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 
 /*contact.html*/
@@ -113,6 +123,12 @@ background: #b1b4b3;
 
 
 /*headings*/
+.catergory-container .jumbotron {
+        background-color: transparent;
+    width: 90%;
+    margin-top: 15%;
+}
+
 .jumbotron {
     background-color: transparent;
     width: 90%;
@@ -170,6 +186,16 @@ background: #b1b4b3;
     font-size: larger;
 }
 
+.sortbtn {
+        border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    background-color: #deba2b;
+    border-color: #deba2b;
+    color: black;
+    font-size: larger;
+}
+
 
 /*hover properties*/
 .searchbtn:hover {
@@ -192,6 +218,7 @@ a .hvr-grow:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
+    border-radius: 15px;
 }
 
 .card {
@@ -216,7 +243,9 @@ a .hvr-grow:hover{
 
 @media screen and (min-width:768px) and (max-width:991px) {
 .form_size {
-    width: 50vw;}
+    width: 50vw;
+    }
+
 }
 
 @media screen and (min-width:929px) {

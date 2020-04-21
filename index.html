@@ -98,7 +98,7 @@
         </div>
      <!-- </section> -->
      <br>
-      <div class=" scroll">
+      <div class="scroll">
         <div class="row">
           <div id="movies" class="cards"></div>
         </div>
@@ -108,14 +108,18 @@
     <!--/movie search bar-->
 
     <!--Collections page-->
-    <div class="container catergory-container" id="catergories">
-      <section class="collections">
+    <div class="container-fluid catergory-container" id="catergories">
+      <section class="searchbar jumbotron">
         <div class="row">
-          <div class="col-12 my-5">
+          <div class="col-12">
             <h2 class="text-uppercase heading">
-              Most popular movies/Top rated movies
+              <i class="fas fa-quote-left"></i>Why not <u><strong>sort</strong></u> your search!?<i class="fas fa-quote-right"></i>
             </h2>
-            <h3 class="sm-text">search the most popular movies ......</h3>
+            <h3>Choose from remakes and classics, or search from A to Zeeee...</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 col-md-6">
                        <form class="wrapper" id="orderForm">
               <input
                 type="text"
@@ -130,11 +134,16 @@
               >
                 <i class="fas fa-angle-double-right"></i>
               </button>
-            </form>
-            <button id="newBtn">Newest First</button>
-            <button id="alphaBtn">Alphabetical Order</button>
-            <div id="page2" class="cards">
             
+            <button id="newBtn" class="sortbtn hvr-grow"><i class="fas fa-sort-amount-down"></i></button>
+            <button id="alphaBtn" class="sortbtn hvr-grow"><i class="fas fa-sort-alpha-down"></i></button>
+            </form>
+            <br>
+          </div>
+        </div>
+      <div class="scroll">
+        <div class="row">
+            <div id="page2" class="cards">
             </div>
           </div>
         </div>
