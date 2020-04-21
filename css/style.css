@@ -73,22 +73,6 @@ background: #b1b4b3;
 }
 
 
-/*catergory.html*/
-.catergory-container {
-    position: relative;
-    height: 100vh;
-    background: url("../images/home-sm.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
 /*contact.html*/
   .contact-container {
     height: 100vh;
@@ -208,13 +192,6 @@ a .hvr-grow:hover{
     color: rgb(255, 255, 255);
 }
 
-button .addMore:hover {
-    border: 2px;
-    background-color: black;
-    color: #deba2b;
-    border-radius: 15px;
-}
-
 /*modal positioning*/
 .modal-dialog {
     top: 30%;
@@ -252,7 +229,10 @@ button .addMore:hover {
 .form_size {
     width: 50vw;
     }
-
+    .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 }
 
 @media screen and (min-width:929px) {
