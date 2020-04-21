@@ -43,7 +43,6 @@ inputText.value = "";
 
 
 //categories:
-
 const order = document.getElementById("page2");
 
 const orderMovies = (search) => {
@@ -52,6 +51,7 @@ fetch(`https://www.omdbapi.com/?s=${search}&apikey=b619899`)
   .then(response => response.json())
   .then((data) => {
       console.log(data);
+
     data.Search.forEach((result) => {
       const coll = `<div class="order-card" data-title=${result.Title} data-year=${result.Year}> 
         <img src="${result.Poster}" alt="">
@@ -62,30 +62,42 @@ fetch(`https://www.omdbapi.com/?s=${search}&apikey=b619899`)
     });
   });
 };
-
 const orderForm = document.getElementById("orderForm");
+
 orderForm.addEventListener("submit", (event) => {
 event.preventDefault();
+
 const orderText = document.getElementById("orderText");
 order.innerHTML = "";
 
 orderMovies(orderText.value);
 orderText.value = "";
 });
+//this adds default movies so the page doesnt look empty
+orderMovies("bad boys");
 
+//the buttons to sort the order of the films
+//newest to old
 const nf = document.getElementById("newBtn");
+//alphabetical order a-b
 const ao = document.getElementById("alphaBtn");
 
+//click event added
 nf.addEventListener("click", (event)=> {
     console.log(event.currentTarget);
+    //targeting the year parameter provided by the api's array
     Array.from(document.querySelectorAll(".order-card[data-year]"))
+    //sorting data from newest to oldest 
     .sort(({dataset:{year:a}}, {dataset:{year:b}}) => b.localeCompare(a))
     .forEach((item) =>
     item.parentNode.appendChild(item));
 });
+//click event added
 ao.addEventListener("click", (event)=> {
     console.log(event.currentTarget);
+    //targeting the title parameter provided by the api's array
     Array.from(document.querySelectorAll(".order-card[data-title]"))
+    //sorting data in alphabetical order, a-b
     .sort(({dataset:{title:a}}, {dataset:{title:b}}) => a.localeCompare(b))
     .forEach((item) =>
     item.parentNode.appendChild(item));
