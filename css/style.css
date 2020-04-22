@@ -30,7 +30,7 @@ body .navbar .navbar-custom {
 /*index.html*/
 .search-container {
   height: 100vh;
-  background: url("..assets/images/home-bg.jpg") no-repeat center center fixed;
+  background: url("../images/home-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -43,7 +43,7 @@ body .navbar .navbar-custom {
 /*contact.html*/
 .contact-container {
   height: 100vh;
-  background: url("..assets/images/contact-bg.jpg") no-repeat center center fixed;
+  background: url("../images/contact-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
