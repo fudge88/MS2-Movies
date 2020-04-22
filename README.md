@@ -1,9 +1,9 @@
 
-# Movie Muncher
+# **Movie Muncher**
 
 -------------------------
 
-### JavaScript & Interactive front-end Development
+### **JavaScript & Interactive front-end Development**
 
 This website is created to allow the user to interact with the website in search of  information on movies.
 
@@ -16,7 +16,7 @@ JavaScript provides, and  how it can enhance user experience.
 
 -------------------------
 
-## UX
+## **UX**
 
 As a user I would want the website to be simple and easy to use. I would like for  
 the website to be  aesthetically pleasing, and somehow represent the website purpose;  
@@ -39,7 +39,7 @@ There is an enquiry form should the user wish to contact Movie Muncher, once an 
 has been sent the page then displays a message of confirmation, reassuring the user that  
 their message has  been received. 
 
-### The colour schemes
+### **The colour schemes**
 
 Given the nature of Movie Muncher I felt that a dark, cinematic feel would be appropriate.  
 I chose to have the home image display the concept of the website. This image is of a  
@@ -58,7 +58,7 @@ the bright colour to ‘welcome’ enquires. I chose this contrast as any contac
 page should be kept light and  airy, to give the user an impression that we are 'happy'  
 to hear from them.  
 
-### The walk through
+### **The walk through**
 
 The home page is simple but inviting, it has all the tools the user needs at first glance  
 to benefit from the website. The home page image represents the cinematic concept of the  
@@ -104,11 +104,13 @@ given time, through the social media icons.
 I chose to keep this Movie Muncher simple to emphasis the functions the website has to  
 offer. It is aesthetically simple, appeasing in design, and smart with its interactions. 
 
-### WireFrames
+### **WireFrames**
 
-wireframes were created using ‘Balsamiq Wireframes 4’, this allowed me to create a computer  
+Wireframes were created using [‘Balsamiq Wireframes 4’](https://balsamiq.com/wireframes/), this allowed me to create a computer  
 and a mobile mock-up of what Movie Muncher would look like. This helped create a visual  
-of how the  content would display.  
+of how the  content would display. 
+
+My wireframes can be seen [here](../wireframes/ms2wireframe.png).
 
 The mobile and large screen design does not differ much, apart from the reduced content  
 on the delivery of results on each row content. This was done to ensure a good customer  
@@ -116,7 +118,7 @@ experience with easy read information and design.
 
 -------------------------
 
-## Features
+## **Features**
 
 As the page consists of 2 sections, I installed scroll Spy to allow ease of navigation  
 from one page to the other. This allows the user to click on the navbar option to be  
@@ -137,7 +139,7 @@ as the text on the website, and is now curved in appearance, completing the slee
 The responsive format of the results, created using the media queries for a more user  
 friendly, easy to read display.  
 
-### Features left to implement
+### **Features left to implement**
 
 Ideally, I would like to display ‘predicted movies of interest’ based on the user  
 searches in a separate box to the results. I would also like an option to allow the  
@@ -145,53 +147,53 @@ user to buy or rent the movie, with instant streaming online.
 
 -------------------------
 
-## Technologies used
+## **Technologies used**
 
 HTML- hypertext markup language was used to build the basic structure of a website.  
 
 CSS- cascading  style sheets was used to style HTML  
 
-Bootstrap4 compromising of HTML CSS JS libraries such as JQuery were used to implement the  
+[Bootstrap4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) compromising of HTML CSS JS libraries such as JQuery were used to implement the  
 Modal, the navbar, and also supported the layout using Bootstraps grid system.  
 
 CDNs were used to style the fonts, icons, give hover properties, and tie up the enquiry  
 form by linking it to an active mail box using EmailJS. Font Awesome used for the social.  
 
-I chose to use an external API, and decided to use OMDBs open source API to call for  
+I chose to use an external API, and decided to use [OMDb's](http://www.omdbapi.com/) open source API to call for  
 information. I used JavaScript to create my functions around the API. JavaScript was  
 also used to ‘sort’ the search results into two different orders; this was done using  
 a ‘click’ event. 
 
 -------------------------
 
-## Testing
+## **Testing**
 
-#### Jasmine testing
-[Jasmine Testing](https://jasmine.github.io/)
+Jasmine testing was conducted using the red green refactor, this is available for you  
+to see [here](../test/test.html). Support was required for this aspect of testing as it  
+was a bit tricky to understand. Resouces such as [Tim’s Cheat Sheet](https://github.com/TravelTimN/ci-ifd-lead/blob/master/week5-jasmine/jasmine.md)
+supported my testing, as its fairly easy to get failing tests to pass, this supported  
+my understanding and working of Jasmine.
 
-[Tim’s Cheat sheet](https://github.com/TravelTimN/ci-ifd-lead/blob/master/week5-jasmine/jasmine.md)
-was conducted using the red green refactor, this is available for you to see here. 
+#### [HTML Validator](https://validator.w3.org/nu/#textarea) check: complete
 
-#### HTML Validator check 
-[HTML Validator](https://validator.w3.org/nu/#textarea)
 
 This showed 2 errors, 1 which has been corrected. The text area for the enquiry form  
 has ‘row’ as an attribute, which is now corrected to ‘rows’. The 2nd error points out the  
 EmailJS cdn to be an unnecessary resource. 
 
-#### CSS validator check: complete 
-[Css Validator](https://jigsaw.w3.org/css-validator/validator)
+#### [CSS Validator](https://jigsaw.w3.org/css-validator/validator) check: complete 
+
 
 This shows 13 warnings, 3 of which state the border and the background colour for the  
 buttons are the same. And 10 warnings for -webkit and -moz which fagup to be an  
 ‘unknown vendor extention’, however, these were used to style my background images and  
 scrollbars, as seen on [css-tricks](https://css-tricks.com/perfect-full-page-background-image/)
 
-### Table of Trial and Error
+### **Table of Trial and Error**
 
 Table goes here 
 
-### My Findings
+### **My Findings**
 
 During the use of ‘DevTools’ was handy, when styling and resizing the with CSS, it was  
 also handy when finding spacing errors. However, DevTools offered a slight discrepancy  
@@ -205,7 +207,7 @@ put effort into seeing the content.
 
 -------------------------
 
-## Deployment
+## **Deployment**
 
 This website was deployed on GitHub Pages. Click the link to see my GitHub deployed pages.  
 
@@ -217,83 +219,99 @@ This website was deployed on GitHub Pages. Click the link to see my GitHub deplo
 6. Scroll back down to ‘GitHub Pages’ and you should now have a message reading ‘Your site is  published at …..’ 
 this is followed by a link which is unique to your project. 
 
-### Local Deployment
+### **Local Deployment**
 
 As a new developer, I would encourage other users to use my code, and make further  
 improvements, or even use it to facilitate a project they may be working on. 
 
-This can be done by clicking ‘clone or download’ on my GitHub Directory for my MS2-Movies.  
+This can be done by clicking ‘clone or download’ on my GitHub Directory for my [MS2-Movies](https://github.com/fudge88/MS2-Movies).  
 This should then lead the user to their GitPod workspace with my code ready to use. 
 
 -------------------------
 
-## Credits 
+## **Credits** 
 
-### Content
+### **Content**
 
 The contents were created by myself, the search results are pulled from an external open  
-source API [OMDB](http://www.omdbapi.com/).
+source API [OMDb](http://www.omdbapi.com/).
 
-### Media
+### **Media**
 
-##### Background images: 
+##### Background images [Dreamstime:](https://www.dreamstime.com/)
 
-[Dreamstime:](https://www.dreamstime.com/)
+> [Home background](../images/home-bg.jpg)  
+ID 176178902 © Pichaya P 
 
-> ID 176178902 © Pichaya P | Dreamstime.com
+> [Contact Us background](../images/home-bg.jpg)  
+ID 139246593 © 9dreamstudio 
 
-> ID 139246593 © 9dreamstudio | Dreamstime.com
+### **Styling**
 
-### Styling
+##### [Google fonts:](https://fonts.google.com/) 
+Fonts used: Roboto, and Oswald
 
-###### Google fonts: Roboto, and Oswald
+##### [Font Awesome:](https://fontawesome.com/) 
 
-###### Font awesome: used for the following icons:
-
-[Font Awesome:](https://fontawesome.com/)
+Icons used:
 
 > Arrow pointing down: level-down-alt
+
 > Buttons: sort amount down, sort-alpha-down, angle-double-right
+
 > Brand icon: film
 
-###### Hover cdn: 
+##### [Hover Collection:](http://ianlunn.github.io/Hover/)
 
-[Hover Collection:](http://ianlunn.github.io/Hover/)
+Hover properties used:
 
 > Hvr-grow-shadow
+
 > Hvr-grow
 
-### Creating the search box:
+### **Creating the search box:**
 
-[Coding market](https://www.youtube.com/watch?v=FVH-tXVRErg)
+Inspiration taken from [Coding market](https://www.youtube.com/watch?v=FVH-tXVRErg)
 
-### Creating a scroll bar:
+### **Creating a scroll bar:**
 
-[CSS tricks](https://css-tricks.com/the-current-state-of-styling-scrollbars/)
+Inspiration taken from [CSS tricks](https://css-tricks.com/the-current-state-of-styling-scrollbars/)
 
-### Bootstrap 4:
+### **Bootstrap 4:**
 
-> [Navbar:] (https://getbootstrap.com/docs/4.0/components/navbar/)
-> [Modal:] (https://getbootstrap.com/docs/4.0/components/modal/)
-> [ScrollSpy:] (https://getbootstrap.com/docs/4.0/components/scrollspy/)
-> [Grid:] (https://getbootstrap.com/docs/4.0/layout/grid/)
+> [Navbar](https://getbootstrap.com/docs/4.0/components/navbar/)
 
-## Information sources 
+> [Modal](https://getbootstrap.com/docs/4.0/components/modal/)
 
-### JS functions:
+> [ScrollSpy](https://getbootstrap.com/docs/4.0/components/scrollspy/)
 
-> [Email JS] https://www.emailjs.com/
-> [Sort buttons] https://www.w3schools.com/jsref/jsref_sort.asp
+> [Grid](https://getbootstrap.com/docs/4.0/layout/grid/)
 
-### Understanding APIs and JavaScript:
+## **Information sources** 
 
-> [The coding train:](https://www.youtube.com/results?search_query=api+weather+javascript)
-> [Traversy media:](https://www.youtube.com/watch?v=YsPqjYGauns)
-> [Le Wagon] course material
+### **JS functions:**
 
-### JSON & AJAX 
+Additional lessons learnt fromthe following sources:
 
-> [Learn web code:](https://www.youtube.com/watch?v=rJesac0_Ftw)
+> [Email JS](https://www.emailjs.com/)
+
+> [Sort buttons](https://www.w3schools.com/jsref/jsref_sort.asp)
+
+### **Understanding APIs and JavaScript:**
+
+Additional lessons learnt fromthe following sources:
+
+> [The coding train](https://www.youtube.com/results?search_query=api+weather+javascript)
+
+> [Traversy media](https://www.youtube.com/watch?v=YsPqjYGauns)
+
+> [Le Wagon](https://ondemand.lewagon.com/tracks/bootcamp-prep)
+
+### **JSON & AJAX**
+
+Additional lessons learnt fromthe following sources:
+
+> [Learn web code](https://www.youtube.com/watch?v=rJesac0_Ftw)
 
 ## Acknowledgments
 
