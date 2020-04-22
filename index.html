@@ -4,53 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Movie Muncher | The Good The Bad and The Movie</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous" ></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <script
       src="https://kit.fontawesome.com/19ccb1323d.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous" ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.5.0.js"
-      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
-      crossorigin="anonymous"
-    ></script>
+      rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+      type="text/css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
   </head>
+
   <body>
     <!--navbar-->
     <nav class="col-12 navbar navbar-expand-lg navbar-dark fixed-top">
-      <a class="navbar-brand hvr-grow navbar-custom" href="index.html"
-        ><i class="fas fa-film"></i> Movie Muncher</a
-      >
-      <button
-        class="navbar-toggler ml-auto"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <a class="navbar-brand hvr-grow navbar-custom" href="index.html" ><i class="fas fa-film"></i> Movie Muncher</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto justify-content-end">
           <li class="nav-item">
             <a class="nav-link hvr-grow-shadow" href="index.html">Home</a>
           </li>
@@ -62,7 +49,7 @@
     </nav>
     <!--/navbar-->
 
-    <!--movie search bar-->
+    <!--movie search page-->
     <div class="container-fluid search-container">
       <section class="searchbar jumbotron">
         <div class="row">
@@ -72,50 +59,62 @@
             </h2>
           </div>
         </div>
+        <!--movie search bar-->
         <div class="row">
           <div class="col-sm-12 col-md-6">
-          <div class="d-flex">
-          <div style="flex: 0 0 80%;">
-            <form class="wrapper" id="searchForm">
-              <input
-                type="text"
-                class="input"
-                id="searchText"
-                placeholder="Type to search..."
-              />
-              <button
-                type="submit"
-                class="searchbtn hvr-grow"
-                id="searchButton"
-                title="Search"
-              >
-                <i class="fas fa-angle-double-right"></i>
-              </button>
-              </form>
-          </div>
-          <div style="flex: 0 0 20%;" class="align-items-center">
-              <button id="newBtn" class="sortbtn hvr-grow" title="Sort by Year"><i class="fas fa-sort-amount-down"></i></button>
-            <button id="alphaBtn" class="sortbtn hvr-grow" title="Sort by Alphabet"><i class="fas fa-sort-alpha-down"></i></button>
-          </div>
-          </div>
+            <div class="d-flex">
+              <div style="flex: 0 0 80%;">
+                <form class="wrapper" id="searchForm">
+                  <input
+                    type="text"
+                    class="input"
+                    id="searchText"
+                    placeholder="Type to search..."/>
+                  <button
+                    type="submit"
+                    class="searchbtn hvr-grow"
+                    id="searchButton"
+                    title="Search">
+                    <i class="fas fa-angle-double-right"></i>
+                  </button>
+                </form>
+              </div>
+              <!--/movie search bar-->
+              <div style="flex: 0 0 20%;" class="align-items-center">
+                <button
+                  id="newBtn"
+                  class="sortbtn hvr-grow"
+                  title="Sort by Year">
+                  <i class="fas fa-sort-amount-down"></i>
+                </button>
+                <button
+                  id="alphaBtn"
+                  class="sortbtn hvr-grow"
+                  title="Sort by Alphabet">
+                  <i class="fas fa-sort-alpha-down"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-     <!-- </section> -->
-     <br>
-      <div class="scroll">
-        <div class="row">
-          <div id="movies" class="cards"></div>
+        <br />
+        <!--movie search results-->
+        <div class="scroll">
+          <div class="row">
+            <div id="movies" class="cards"></div>
+          </div>
         </div>
-      </div>
+        <!--/movie search results-->
       </section>
     </div>
-    <!--/movie search bar-->
+    <!--/movie search page-->
 
     <!--Contact section-->
     <div class="container-fluid contact-container" id="contactus">
       <section class="contact wrapper">
         <div class="row">
           <div class="col-12">
+          <!--contact form-->
             <form class="form_size" onsubmit="return sendMail(this);">
               <h2 class="text-uppercase heading">
                 contact us<i class="fas fa-level-down-alt"></i>
@@ -127,34 +126,32 @@
                 id="fullname"
                 class="form-control"
                 placeholder="Name"
-                required
-              />
+                required/>
               <input
                 type="email"
                 name="email"
                 id="emailaddress"
                 class="form-control"
                 placeholder="Email"
-                required
-              />
+                required/>
               <textarea
                 rows="3"
                 name="enuiry"
                 id="enquiry"
                 class="form-control"
                 placeholder="Your enquiry..."
-                required
-              ></textarea
-              ><br>
+                required>
+              </textarea>
+                <br/>
               <button
                 type="submit"
                 class="searchbtn hvr-grow"
                 data-toggle="modal"
-                data-target="#contactus-modal"
-              >
+                data-target="#contactus-modal">
                 Send!
               </button>
             </form>
+            <!--/contact form-->
           </div>
         </div>
       </section>
@@ -180,8 +177,7 @@
       tabindex="-1"
       role="dialog"
       aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
+      aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -192,8 +188,7 @@
               type="button"
               class="close"
               data-dismiss="modal"
-              aria-label="Close"
-            >
+              aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -213,11 +208,12 @@
       </div>
     </div>
     <!--/contact us- submit button modal-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    
-    <script src="js/sendMail.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../assets/js/sendMail.js"></script>
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>
