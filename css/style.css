@@ -118,31 +118,30 @@ div.scroll {
 
 /*grid*/
 .cards {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 48px;
   border-radius: 15px;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 .card {
   background-color: transparent;
   display: inline-grid;
+  overflow: hidden;
 }
 
 .card img {
-  width: 200px;
+  width: 300px;
   object-fit: crop;
 }
 
 .imageBox {
-    height: 250px;
+    height: 350px;
 }
 
 .movieDataBox{
     background-color: black;
-    width: 200px;
+    width: 300px;
 }
 
 /*scrollbar*/
@@ -248,6 +247,9 @@ a .hvr-grow:hover {
 }
 .movieDataBox{
     width: 250px;
+}
+.imageBox {
+    height: 300px;
 }
 }
 

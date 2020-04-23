@@ -20,11 +20,11 @@ const searchMovies = (search) => {
 };
 
 function createMovieCard(result){
-    let the_movie = `<div class="container card" data-title=${result.Title} data-year=${result.Year}> 
+    let the_movie = `<div class="card" data-title=${result.Title} data-year=${result.Year}> 
     <div class="imageBox">
                 <img src="${result.Poster}" alt="">
                 </div>
-                <div class="movieDataBox"
+                <div class="movieDataBox">
                 <h3>${result.Title}</h3>
                 <p>${result.Year}</p>
                 </div>
