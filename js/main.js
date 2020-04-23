@@ -20,10 +20,14 @@ const searchMovies = (search) => {
 };
 
 function createMovieCard(result){
-    let the_movie = `<div class="card" data-title=${result.Title} data-year=${result.Year}> 
+    let the_movie = `<div class="container card" data-title=${result.Title} data-year=${result.Year}> 
+    <div class="imageBox">
                 <img src="${result.Poster}" alt="">
+                </div>
+                <div class="movieDataBox"
                 <h3>${result.Title}</h3>
                 <p>${result.Year}</p>
+                </div>
                 </div>`;
     return the_movie;
         
@@ -64,10 +68,10 @@ numberOrder.addEventListener("click", (event)=> {
     .forEach((item) => item.parentNode.appendChild(item));
 });
 //click event added
-alphaOrder.addEventListener("click", (event)=> 
+alphaOrder.addEventListener("click", (event)=> {
     //targeting the title parameter provided by the api's array
     Array.from(document.querySelectorAll(".card[data-title]"))
     //sorting data in alphabetical order, a-b
     .sort(({dataset:{title:a}}, {dataset:{title:b}}) => a.localeCompare(b))
-    .forEach((item) => item.parentNode.appendChild(item)));
+    .forEach((item) => item.parentNode.appendChild(item));
 });
