@@ -141,9 +141,12 @@ friendly, easy to read display.
 
 ### **Features left to implement**
 
-Ideally, I would like to display ‘predicted movies of interest’ based on the user  
-searches in a separate box to the results. I would also like an option to allow the  
-user to buy or rent the movie, with instant streaming online. 
+Ideally, I would like for the user to be able to click on the image and be taken to an external  
+resource, where they can get more information on the movie of interest. But due to the time  
+constraints, and also the lack of Parameters OMDb provide iam unable o create thi feature at  
+this moment in time. If i had more time, i would have liked to create another page where  
+the user could see movies that are already populated in the order of the highest reviews, and  
+popularity.
 
 -------------------------
 
@@ -169,7 +172,7 @@ a ‘click’ event.
 ## **Testing**
 
 Jasmine testing was conducted using the red green refactor, this is available for you  
-to see [here](../test/test.html). Support was required for this aspect of testing as it  
+to see [here](../test/test.html), all you do is run the code, to see the results appear. Support was required for this aspect of testing as it  
 was a bit tricky to understand. Resouces such as [Tim’s Cheat Sheet](https://github.com/TravelTimN/ci-ifd-lead/blob/master/week5-jasmine/jasmine.md)
 supported my testing, as its fairly easy to get failing tests to pass, this supported  
 my understanding and working of Jasmine.

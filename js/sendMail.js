@@ -1,4 +1,4 @@
-//function
+// this send the mail to the Movie Muncher inboxfunction
 function sendMail(form_size) {
     
 //email js user code
