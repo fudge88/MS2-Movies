@@ -8,22 +8,6 @@ describe ("Movie muncher", function (){
     });
 });
 
-
-describe ("createMovieCard", function (){
-    it("creates a mmovie card", function(){
-        let movie = {Poster: "rjfeirfieirj", Title: "Title", Year: 2020}
-        let movieCard =
-        `<div class="card" data-title=Title data-year=2020>
-        <div class="imageBox">
-        <img src="rjfeirfieirj" alt="">
-        </div>
-        <div class="movieDataBox">
-        <h3>${result.Title}</h3><p>${result.Year}</p></div>
-        </div>`;
-        expect (createMovieCard(movie)).toEqual(movieCard);
-    });
-});
-
 function add(a, b){
     return a + b;
 }
