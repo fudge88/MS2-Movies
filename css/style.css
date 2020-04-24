@@ -249,9 +249,11 @@ a .hvr-grow:hover {
   }
   .card img{
       width: 250px;
+      margin-left: 30px
   }
   .movieDataBox{
       width: 250px;
+      margin-left: 30px
   }
   .imageBox {
       height: 300px;
