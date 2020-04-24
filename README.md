@@ -308,7 +308,11 @@ I originally thought having two search results appearing on a small screen would
 good, however using DevTools I found that it would be impractical, and require the user  
 to zoom in and out of each result to get a clearer view. I now have one result displayed  
 on each row, which gives the user a clearer picture of their results without having to  
-put effort into seeing the content.   
+put effort into seeing the content.  
+
+I also found that the user would have click the search button before they are able  
+to use their sort buttons, asthe sort buttons only work to change the order of the results  
+rather then running both functions.
 
 -------------------------
 
