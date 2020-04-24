@@ -174,8 +174,8 @@ a ‘click’ event.
 Jasmine testing was conducted using the red green refactor, this is available for you  
 to see [here](../test/test.html), all you do is run the code, to see the results appear.  
 Support was required for this aspect of testing as it was a bit tricky to understand.  
-Jasmine passed the tests, but there was an undefined error which was due to test.html not  
-having a 'search form'. Resouces such as [Tim’s Cheat Sheet](https://github.com/TravelTimN/ci-ifd-lead/blob/master/week5-jasmine/jasmine.md) supported my testing, as its fairly  
+Jasmine passed the tests, but there was an error which was due to another funtion  
+not used in the main.js file. Resouces such as [Tim’s Cheat Sheet](https://github.com/TravelTimN/ci-ifd-lead/blob/master/week5-jasmine/jasmine.md) supported my testing, as its fairly  
 easy to get failing tests to pass, this supported  
 my understanding and working of Jasmine.
 
