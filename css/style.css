@@ -228,9 +228,14 @@ a .hvr-grow:hover {
   top: 30%;
 }
 
-
+.form-control {
+  width: 50vw;
+}
 /*--media queries--*/
 @media screen and (max-width: 667px) {
+  .form-control {
+    width: 100%;
+  }
   .cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -238,24 +243,24 @@ a .hvr-grow:hover {
   .sortbtn {
     width: 25px;
     padding-left: 1px
-}
-.card{
-    display: contents;
-}
-.card img{
-    width: 250px;
-}
-.movieDataBox{
-    width: 250px;
-}
-.imageBox {
-    height: 300px;
-}
+  }
+  .card{
+      display: contents;
+  }
+  .card img{
+      width: 250px;
+  }
+  .movieDataBox{
+      width: 250px;
+  }
+  .imageBox {
+      height: 300px;
+  }
 }
 
 @media screen and (min-width: 668px) and (max-width: 891px) {
-  .form_size {
-    width: 50vw;
+  .form-control {
+    width: 100%;
   }
   .cards {
     display: grid;
@@ -269,9 +274,6 @@ a .hvr-grow:hover {
 
 
 @media screen and (min-width: 892px) and (max-width:1079px){
-      .form_size {
-    width: 50vw;
-  }
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

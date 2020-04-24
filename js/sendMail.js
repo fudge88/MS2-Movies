@@ -1,6 +1,6 @@
 // this send the mail to the Movie Muncher inboxfunction
 function sendMail(form_size) {
-    
+
 //email js user code
     emailjs.init("user_nSvDfzE3Zj0etYWKO8d8D");
 //email js email account type and template name
@@ -15,14 +15,17 @@ function sendMail(form_size) {
         //if successful print success on console.log
         function(response) {
             console.log("SUCCESS", response);
+            document.getElementById("open").click();
             form_size.name.value = "";
             form_size.email.value = "";
             form_size.enquiry.value = "";
-        },
-        //if successful print failed on console.log
-        function(error) {
-            console.log("FAILED", error);
+
         }
+        // ,
+        // //if successful print failed on console.log
+        // function(error) {
+        //     console.log("FAILED", error);
+        // }
     );
-    return false;  
+    return false;
 }

@@ -20,7 +20,7 @@ const searchMovies = (search) => {
 };
 
 function createMovieCard(result){
-    let the_movie = `<div class="card" data-title=${result.Title} data-year=${result.Year}> 
+    let the_movie = `<div class="card" data-title=${result.Title} data-year=${result.Year}>
     <div class="imageBox">
                 <img src="${result.Poster}" alt="">
                 </div>
@@ -30,32 +30,34 @@ function createMovieCard(result){
                 </div>
                 </div>`;
     return the_movie;
-        
+
 
 }
 
 //targeting the input text bar
 const searchForm = document.getElementById("searchForm");
 //listening for 'submit' to trigger an event  32-39
-searchForm.addEventListener("submit", (event) => {
-//preventing the form submit function from defaulting
-    event.preventDefault();
-        //targeting the input field
-        const inputText = document.getElementById("searchText");
-        //clears the previous search results 
-        movies.innerHTML = "";
+if (searchForm) {
+  searchForm.addEventListener("submit", (event) => {
+  //preventing the form submit function from defaulting
+      event.preventDefault();
+          //targeting the input field
+          const inputText = document.getElementById("searchText");
+          //clears the previous search results
+          movies.innerHTML = "";
 
-//calling the function defined at line 4, and replacing with the new resaults
-//line 39 starts process from line 4-22
-        searchMovies(inputText.value);
-        inputText.value = "";
-});
+  //calling the function defined at line 4, and replacing with the new resaults
+  //line 39 starts process from line 4-22
+          searchMovies(inputText.value);
+          inputText.value = "";
+  });
+}
 
 
 //order function
 //the buttons to sort the order of the films
 //newest to old
-const nuberOrder = document.getElementById("newBtn");
+const numberOrder = document.getElementById("newBtn");
 //alphabetical order a-b
 const alphaOrder = document.getElementById("alphaBtn");
 
@@ -63,7 +65,7 @@ const alphaOrder = document.getElementById("alphaBtn");
 numberOrder.addEventListener("click", (event)=> {
     //targeting the year parameter provided by the api's array
     Array.from(document.querySelectorAll(".card[data-year]"))
-    //sorting data from newest to oldest 
+    //sorting data from newest to oldest
     .sort(({dataset:{year:a}}, {dataset:{year:b}}) => b.localeCompare(a))
     .forEach((item) => item.parentNode.appendChild(item));
 });
