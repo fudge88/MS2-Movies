@@ -9,7 +9,8 @@ function sendMail(form_size) {
         "from_name": form_size.name.value,
         "from_email": form_size.email.value,
         "enquiry_form": form_size.enquiry.value
-    })
+    }) 
+    
     //promise
     .then(
         //if successful print success on console.log

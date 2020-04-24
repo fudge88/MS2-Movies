@@ -187,6 +187,7 @@ div.scroll {
   color: rgba(255, 255, 255, 0.6);
 }
 
+
 /*--button styling--*/
 /*buttons*/
 .searchbtn {
@@ -231,7 +232,7 @@ a .hvr-grow:hover {
 .form-control {
   width: 50vw;
 }
-
+ 
 
 /*--media queries--*/
 @media screen and (max-width: 667px) {

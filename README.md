@@ -116,7 +116,7 @@ The mobile and large screen design does not differ much, apart from the reduced 
 on the delivery of results on each row content. This was done to ensure a good customer  
 experience with easy read information and design. 
 
--------------------------
+------------------------- 
 
 ## **Features**
 
@@ -427,7 +427,7 @@ Additional lessons learnt fromthe following sources:
 Mentor Ignatius for pushing me to achieve more, also advised me to incorporate sort  
 buttons as well as just showcasing my API search engine and working enquiry form. 
 
-The 'tutor me' staff at code institute who spent a lot of time, trying to guide me without  
+The 'tutor me' staff at code institute who spent a lot of time, guiding me without  
 giving me the answers!  
 
 SangSoo and Ikram for guidance with the practical use, and functionalities of Movie Muncher.  

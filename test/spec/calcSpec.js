@@ -8,6 +8,7 @@ describe ("Movie muncher", function (){
     });
 });
 
+
 function add(a, b){
     return a + b;
 }
@@ -24,7 +25,7 @@ describe("add", function(){
         var b = 8;
         expect(add(a, b)).toEqual(10);
     });
-});
+}); 
 
 describe("add", function(){
     it("adds 2 variables", function(){

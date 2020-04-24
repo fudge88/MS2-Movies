@@ -17,7 +17,7 @@ const searchMovies = (search) => {
          movies.insertAdjacentHTML("beforeend", movie);
         });
     });
-};
+}; 
 
 function createMovieCard(result){
     let the_movie = `<div class="card" data-title=${result.Title} data-year=${result.Year}>
@@ -53,6 +53,7 @@ const inputText = document.getElementById("searchText");
 
 
 //order function
+
 //the buttons to sort the order of the films
 //newest to old
 const numberOrder = document.getElementById("newBtn");
@@ -67,6 +68,7 @@ numberOrder.addEventListener("click", (event)=> {
     .sort(({dataset:{year:a}}, {dataset:{year:b}}) => b.localeCompare(a))
     .forEach((item) => item.parentNode.appendChild(item));
 });
+
 //click event added
 alphaOrder.addEventListener("click", (event)=> {
     //targeting the title parameter provided by the api's array
