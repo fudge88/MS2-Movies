@@ -1,4 +1,4 @@
-// this send the mail to the Movie Muncher inboxfunction
+// this send the mail to the Movie Muncher inbox function
 function sendMail(form_size) {
 
 //email js user code
@@ -19,13 +19,7 @@ function sendMail(form_size) {
             form_size.name.value = "";
             form_size.email.value = "";
             form_size.enquiry.value = "";
-
         }
-        // ,
-        // //if successful print failed on console.log
-        // function(error) {
-        //     console.log("FAILED", error);
-        // }
     );
     return false;
 }

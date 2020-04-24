@@ -13,7 +13,7 @@ const searchMovies = (search) => {
              const movie = createMovieCard(result);
                 //put the info into the <ul> on index.html
                 //beforeend- if the new results are to be placed at the top we would use afterbegin
-                 //movie is the list item that was created at line 10
+                //movie is the list item that was created at line 10
          movies.insertAdjacentHTML("beforeend", movie);
         });
     });
@@ -21,35 +21,33 @@ const searchMovies = (search) => {
 
 function createMovieCard(result){
     let the_movie = `<div class="card" data-title=${result.Title} data-year=${result.Year}>
-    <div class="imageBox">
-                <img src="${result.Poster}" alt="">
-                </div>
-                <div class="movieDataBox">
-                <h3>${result.Title}</h3>
-                <p>${result.Year}</p>
-                </div>
-                </div>`;
+            <div class="imageBox">
+            <img src="${result.Poster}" alt="">
+            </div>
+            <div class="movieDataBox">
+            <h3>${result.Title}</h3>
+            <p>${result.Year}</p>
+            </div>
+            </div>`;
     return the_movie;
-
-
 }
 
 //targeting the input text bar
 const searchForm = document.getElementById("searchForm");
-//listening for 'submit' to trigger an event  32-39
-if (searchForm) {
-  searchForm.addEventListener("submit", (event) => {
-  //preventing the form submit function from defaulting
-      event.preventDefault();
-          //targeting the input field
-          const inputText = document.getElementById("searchText");
-          //clears the previous search results
-          movies.innerHTML = "";
-
-  //calling the function defined at line 4, and replacing with the new resaults
-  //line 39 starts process from line 4-22
-          searchMovies(inputText.value);
-          inputText.value = "";
+    //listening for 'submit' to trigger an event  32-39
+    if (searchForm) {
+    searchForm.addEventListener("submit", (event) => {
+    //preventing the form submit function from defaulting
+    event.preventDefault();
+            
+//targeting the input field
+const inputText = document.getElementById("searchText");
+    //clears the previous search results
+    movies.innerHTML = "";
+    //calling the function defined at line 4, and replacing with the new resaults
+    //line 39 starts process from line 4-22
+    searchMovies(inputText.value);
+    inputText.value = "";
   });
 }
 

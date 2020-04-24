@@ -10,18 +10,14 @@ describe ("Movie muncher", function (){
 
 
 describe ("createMovieCard", function (){
-    it("creates a movie card", function (){
-        var movie = {Poster: "rjfeirfieirj", Title: "Title", Year: 2020};
-        var movieCard = 
-`<div class="card" data-title=${result.Title} data-year=${result.Year}> 
-    <div class="imageBox">
-                <img src="${result.Poster}" alt="">
-                </div>
-                <div class="movieDataBox">
-                <h3>${result.Title}</h3>
-                <p>${result.Year}</p>
-                </div>
-                </div>`;
+    it("creates a mmovie card", function(){
+        let movie = {Poster: "rjfeirfieirj", Title: "Title", Year: 2020}
+        let movieCard = 
+        `<div class="card" data-title=Title data-year=2020> 
+            <img src="rjfeirfieirj" alt="">
+            <h3>${result.Title}</h3>
+            <p>${result.Year}</p>
+        </div>`;
         expect (createMovieCard(movie)).toEqual(movieCard);
     });
 });

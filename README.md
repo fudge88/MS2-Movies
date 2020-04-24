@@ -7,12 +7,12 @@
 
 This website is created to allow the user to interact with the website in search of  information on movies.
 
-Movie Muncher is a Movie database search engine, which is user led. This website 
-requires direct input from the user, in order to display results relating to their search. 
-My task at hand was to create a website using HTML, CSS, and JavaScript, with the option 
-of using  JavaScript libraries, and external APIs to create a significantly interactive website. 
-The main criteria  for this project was to show an understanding of some of the functionalities 
-JavaScript provides, and  how it can enhance user experience.  
+Movie Muncher is a Movie database search engine, which is user led. This website  
+requires direct input from the user, in order to display results relating to their search.  
+My task at hand was to create a website using HTML, CSS, and JavaScript, with the option  
+of using  JavaScript libraries, and external APIs to create a significantly interactive website.  
+The main criteria  for this project was to show an understanding of some of the functionalities  
+JavaScript provides, and  how it can enhance user experience.   
 
 -------------------------
 
@@ -23,10 +23,10 @@ the website to be  aesthetically pleasing, and somehow represent the website pur
 this would enhance the experience for users of all ages and reinforce the purpose of  
 the website.  
 
-The users for a website of such a nature are most likely to know what they are looking  
-for, which is why a simple approach suits the layout of the website. Rather then having  
-to navigate through several tabs, and clicking through lists to find the movie you are 
-looking for, a search box facilitates relevant, streamlined results. This enhances  
+The users for a website of such a nature are most likely to know what they are looking for,  
+which is why a simple approach suits the layout of the website. Rather then having  
+to navigate through several tabs, and clicking through lists to find the movie  
+you are looking for, a search box facilitates relevant, streamlined results. This enhances  
 the user experience as instant results are delivered, with information that is useful  
 to them.  
 
@@ -172,10 +172,21 @@ a ‘click’ event.
 ## **Testing**
 
 Jasmine testing was conducted using the red green refactor, this is available for you  
-to see [here](../test/test.html), all you do is run the code, to see the results appear. Support was required for this aspect of testing as it  
-was a bit tricky to understand. Resouces such as [Tim’s Cheat Sheet](https://github.com/TravelTimN/ci-ifd-lead/blob/master/week5-jasmine/jasmine.md)
-supported my testing, as its fairly easy to get failing tests to pass, this supported  
+to see [here](../test/test.html), all you do is run the code, to see the results appear.  
+Support was required for this aspect of testing as it was a bit tricky to understand.  
+Jasmine passed the tests, but there was an undefined error which was due to test.html not  
+having a 'search form'. Resouces such as [Tim’s Cheat Sheet](https://github.com/TravelTimN/ci-ifd-lead/blob/master/week5-jasmine/jasmine.md) supported my testing, as its fairly  
+easy to get failing tests to pass, this supported  
 my understanding and working of Jasmine.
+
+With other aspects of Movie Muncher, such as the contact form, this required some manual  
+testing. i followed the folloing spteps to ensure that it was working with the functions  
+i had installed:
+1. go to Contact Us page
+2. attempted to submit and emty form, this confirmed that the fields were empty and the  
+form could not be sent 
+3. completed all teh fields except one, to recieve a pop up to complete a field  
+4. comleted all fields and sent the enquiry to recieve a successful message on a modal.
 
 #### [HTML Validator](https://validator.w3.org/nu/#textarea) check: complete
 
@@ -190,11 +201,102 @@ EmailJS cdn to be an unnecessary resource.
 This shows 13 warnings, 3 of which state the border and the background colour for the  
 buttons are the same. And 10 warnings for -webkit and -moz which fagup to be an  
 ‘unknown vendor extention’, however, these were used to style my background images and  
-scrollbars, as seen on [css-tricks](https://css-tricks.com/perfect-full-page-background-image/)
+scrollbars, as seen on [css-tricks](https://css-tricks.com/perfect-full-page-background-image/).  
+
+#### [JS Validator](https://jshint.com/) check: complete  
+
+**sendMail.js:** This shows one undefined variable 'emailjs', however thsi was in relation to using  
+an external source to create the function of the enquiry form. There was also one unused  
+variable 'sendMail, but this is used as a trigger in the index.HTML page.  
+
+**main.js:** This showed 25 warnings based on the JS version. The warnings prompted me to  
+use 'eversion: 6', where as i used ES6, and used teh arrow function syntax which  
+prompted alot of warnings.
 
 ### **Table of Trial and Error**
 
-Table goes here 
+<table>
+<tbody><tr>
+<th>Device</th>
+<th>Images</th>
+<th>Links</th>
+<th>Navbar</th>
+<th>Formatting Error</th>
+<th>Notes</th>
+</tr>
+<tr>
+<th>Desktop</th>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>No Error</td>
+<td>Works ok</td>
+</tr>
+<tr>
+<th>Laptop</th>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>No Error</td>
+<td>Works ok</td>
+</tr>
+<tr>
+<th>IPad</th>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>No Error</td>
+<td>Works ok</td>
+</tr>
+<tr>
+<th>IPhone X</th>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>No Error</td>
+<td>Works ok</td>
+</tr>
+<tr>
+<th>IPhone 5</th>
+<td>yes</td>
+<td>yes</td>
+<td>yes (some links fail)</td>
+<td>Some Errors</td>
+<td>Sorting buttons fall under results</td>
+</tr>
+<tr>
+<th>Samsung</th>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>No Error</td>
+<td>Works ok</td>
+</tr>
+<tr>
+<th>Explorer</th>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>No Error</td>
+<td>Slight zoomed out appearance</td>
+</tr>
+<tr>
+<th>Safari</th>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>No Error</td>
+<td>Works ok</td>
+</tr>
+<tr>
+<th>Chrome</th>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>No Error</td>
+<td>Zoomed in appearance</td>
+</tr>
+</tbody></table>
 
 ### **My Findings**
 
@@ -219,8 +321,8 @@ This website was deployed on GitHub Pages. Click the link to see my GitHub deplo
 3. There are options on a bar above, you select the ‘settings’ tab. 
 4. Scroll down to the heading of ‘GitHub Pages’, select ‘master branch’ from the drop-down  menu.
 5. This should refresh the page, and take you back to the top. 
-6. Scroll back down to ‘GitHub Pages’ and you should now have a message reading ‘Your site is  published at …..’ 
-this is followed by a link which is unique to your project. 
+6. Scroll back down to ‘GitHub Pages’ and you should now have a message reading ‘Your site is  published  
+at …..’ this is followed by a link which is unique to your project. 
 
 ### **Local Deployment**
 

@@ -231,6 +231,8 @@ a .hvr-grow:hover {
 .form-control {
   width: 50vw;
 }
+
+
 /*--media queries--*/
 @media screen and (max-width: 667px) {
   .form-control {
